@@ -1,0 +1,43 @@
+id,area,check,expected,observed,result
+P01,CDC structure,Required columns are present,none missing,none missing,PASS
+P02,CDC coverage,Every row belongs to North Carolina,['NC'],['NC'],PASS
+P03,CDC keys,County FIPS codes are five digits starting with 37,37001 to 37199,37001 to 37199,PASS
+P04,CDC coverage,Number of distinct counties,100,100,PASS
+P05,CDC keys,FIPS code and county name map one-to-one,100,100,PASS
+P06,CDC structure,Every county has the same number of raw rows,constant,80 to 80 rows per county,PASS
+P07,Privacy,No person-level fields; smallest unit is a county,aggregate county fields only,aggregate county fields only,PASS
+P08,CDC structure,Selected rows = 7 measures x 100 counties,700,700,PASS
+P09,CDC keys,County-measure-type-year is unique before pivoting,0,0,PASS
+P10,Timing,All seven selected measures use survey year 2023,['2023'],['2023'],PASS
+P11,Timing,Measures with another survey year are outside the analysis,no overlap with selected measures,"2022 measures not used: COLON_SCREEN, DENTAL, MAMMOUSE, SLEEP, TEETHLOST",PASS
+P12,Units,Unit is percent for every selected row,['%'],['%'],PASS
+P13,Missingness,"No missing or non-numeric values in estimates, limits, population",0,0,PASS
+P14,Ranges,Estimates and confidence limits lie between 0 and 100 percent,within 0-100,4.4 to 34.9,PASS
+P15,Ranges,Lower limit <= estimate <= upper limit in every row,0,0,PASS
+P16,CDC keys,Population fields are constant within county,True,True,PASS
+P17,Ranges,Adult population is positive and no larger than total population,0 < adults <= total,"total population 3,461 to 1,190,275",PASS
+P18,Ranges,County centroids fall inside the North Carolina bounding box,"lon -84.5 to -75.3, lat 33.7 to 36.7","lon -84.06 to -75.78, lat 34.07 to 36.49",PASS
+P19,CDC structure,Wide table has 100 unique counties and no missing cells,"100 rows, 0 missing cells","100 rows, 0 missing cells",PASS
+E01,EPA structure,Required columns are present,none missing,none missing,PASS
+E02,EPA coverage,"Every row is North Carolina, year 2023",['North Carolina'] [2023],['North Carolina'] [2023],PASS
+E03,EPA keys,One row per county (no duplicate county names),equal,"35 rows, 35 counties",PASS
+E04,Missingness,No missing values in AQI fields,0,0,PASS
+E05,Ranges,Days with AQI between 1 and 365,1 to 365,116 to 365,PASS
+E06,Units,Six AQI category counts add up to days with AQI,0,0,PASS
+E07,Units,Main-pollutant day counts add up to days with AQI,0,0,PASS
+E08,Ranges,"Median AQI <= 90th percentile <= maximum, all within 0-500","ordered, 0-500","median 26-52, max 65-154",PASS
+E09,Ranges,Maximum AQI > 100 exactly when at least one day is above 100,0,0,PASS
+D01,Derived,Share of monitored days with AQI > 100 lies between 0 and 1,0 to 1,0.0000 to 0.0207,PASS
+J01,Join,Normalised county names are unique on both sides,"CDC 100, EPA = EPA rows","CDC 100, EPA 35",PASS
+J02,Join,Every EPA county matches a CDC county,0 unmatched,0 unmatched,PASS
+J03,Join,Left join keeps exactly the 100 CDC counties,"100, 100","100 before, 100 after",PASS
+J04,Join,Counties with AQI records after the join equal EPA rows,all EPA rows matched once,35 of 35,PASS
+J05,Timing,Health indicators and AQI summaries refer to the same year,same year,PLACES survey year 2023; EPA summary year 2023,PASS
+B01,Map boundaries,"Boundary file has one record per county, all in state FIPS 37","100 records, 100 distinct codes","100 records, 100 distinct codes",PASS
+B02,Join,Boundary county codes equal the 100 CDC county FIPS codes,0 codes unmatched,0 codes unmatched,PASS
+B03,Join,County names agree between the boundary file and CDC,0 names differ,0 names differ,PASS
+B04,Ranges,Boundary coordinates fall inside the North Carolina bounding box,"lon -84.5 to -75.3, lat 33.7 to 36.7","lon -84.32 to -75.46, lat 33.84 to 36.59",PASS
+B05,Map boundaries,Each CDC county centroid lies within the extent of its boundary polygon,0 centroids outside,0 centroids outside,PASS
+M01,Missingness,Seven health indicators complete for all 100 counties,0,0,PASS
+M02,Missingness,AQI fields are missing exactly for counties without EPA records,100 - EPA rows,65 counties without AQI summary,PASS
+D02,Derived,Data dictionary documents every column of the processed table,all columns documented,all columns documented,PASS

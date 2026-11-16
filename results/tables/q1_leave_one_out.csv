@@ -1,0 +1,4 @@
+term,estimate_all_counties,loo_min,loo_min_dropped,loo_max,loo_max_dropped,n_sign_changes
+transport,0.21374,0.18902,Watauga,0.38755,Robeson,0
+uninsured,0.01692,0.00561,Duplin,0.02582,Robeson,0
+housing,-0.21059,-0.31546,Robeson,-0.19022,Watauga,0

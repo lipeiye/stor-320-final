@@ -1,0 +1,8 @@
+model,term,vif
+baseline,smoking,6.713
+baseline,inactivity,6.713
+expanded,smoking,17.101
+expanded,inactivity,57.355
+expanded,transport,100.506
+expanded,uninsured,6.002
+expanded,housing,103.948

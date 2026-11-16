@@ -1,0 +1,4 @@
+county,times_in_resample,share_of_resamples,mean_slope_transport,mean_slope_uninsured,mean_slope_housing
+Robeson,not drawn,0.3715,0.4297,0.02801,-0.33535
+Robeson,drawn once,0.3715,0.21705,0.01654,-0.21146
+Robeson,drawn twice or more,0.257,0.15817,0.01322,-0.17718

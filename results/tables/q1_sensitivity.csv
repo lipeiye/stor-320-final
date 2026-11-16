@@ -1,0 +1,12 @@
+analysis,n,term,estimate,hc3_low,hc3_high
+all 100 counties,100,transport,0.21374,-0.14837,0.57584
+all 100 counties,100,uninsured,0.01692,-0.02855,0.06239
+all 100 counties,100,housing,-0.21059,-0.4286,0.00741
+without Robeson (largest Cook's distance),99,transport,0.38755,0.05287,0.72223
+without Robeson (largest Cook's distance),99,uninsured,0.02582,-0.01953,0.07117
+without Robeson (largest Cook's distance),99,housing,-0.31546,-0.47745,-0.15348
+without the three most influential counties,97,transport,0.4873,0.27919,0.6954
+without the three most influential counties,97,uninsured,0.04114,0.00286,0.07942
+without the three most influential counties,97,housing,-0.34412,-0.45644,-0.2318
+"composite social index, alone",100,social_index (per 1 SD),0.97067,0.85861,1.08274
+"composite social index, with smoking and inactivity",100,social_index (per 1 SD),-0.17224,-0.43096,0.08648

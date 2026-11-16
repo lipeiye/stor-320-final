@@ -1,0 +1,4 @@
+series,morans_i,p_permutation_one_sided,weights,permutations
+COPD estimate,0.29779,0.0001,5 nearest county centroids,9999
+baseline model residuals,0.19947,0.0004,5 nearest county centroids,9999
+expanded model residuals,0.2105,0.0006,5 nearest county centroids,9999

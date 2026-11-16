@@ -1,0 +1,8 @@
+step,rows,counties,note
+CDC raw snapshot,8000,100,40 measures x 2 value types
+Seven selected measures,1400,100,both value types
+Age-adjusted prevalence only,700,100,crude prevalence rows dropped
+Pivot to one row per county,100,100,21 measure columns
+EPA raw snapshot (NC),35,35,counties with 2023 AQI records
+Left join of EPA onto CDC counties,100,100,35 counties with AQI records; none imputed
+AQI subset with >= 300 monitored days,23,23,coverage sensitivity subset

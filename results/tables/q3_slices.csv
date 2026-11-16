@@ -1,0 +1,7 @@
+slice,group,n,n_high,false_negatives_baseline,false_positives_baseline,false_negatives_penalized,false_positives_penalized
+population third,smallest third,34,12,1,2,1,1
+population third,middle third,33,9,3,0,3,0
+population third,largest third,33,1,0,0,0,0
+longitude third,western third,34,5,4,0,4,0
+longitude third,central third,33,5,0,0,0,0
+longitude third,eastern third,33,12,0,2,0,1

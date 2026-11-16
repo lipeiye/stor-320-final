@@ -1,0 +1,1662 @@
+{
+  "acquisition": {
+    "boundaries_date": "2026-11-15",
+    "cdc_dataset_name": "PLACES: Local Data for Better Health, County Data, 2025 release",
+    "cdc_footnote_fields_in_fresh": [],
+    "cdc_fresh_retrieved_utc": "2026-11-15T18:51:42Z",
+    "cdc_license_id": "PUBLIC_DOMAIN",
+    "cdc_rows_updated_utc": "2025-12-04T10:35:06Z",
+    "census_coordinate_system": "GCS_North_American_1983",
+    "census_counties_all_states": 3235,
+    "census_zip_bytes": 2987117,
+    "census_zip_last_modified": "Tue, 16 Apr 2024 12:24:27 GMT",
+    "comparison": [
+      {
+        "cells_compared": 136000,
+        "cells_different": 0,
+        "columns_only_in_fresh": "",
+        "columns_only_in_snapshot": "",
+        "fresh_retrieved_utc": "2026-11-15T18:51:42Z",
+        "identical_content": true,
+        "keys_only_in_fresh": 0,
+        "keys_only_in_snapshot": 0,
+        "rows_fresh": 8000,
+        "rows_snapshot": 8000,
+        "snapshot_date": "2026-09-28",
+        "source": "CDC PLACES (NC rows)",
+        "source_last_changed": "2025-12-04T10:35:06Z"
+      },
+      {
+        "cells_compared": 525,
+        "cells_different": 0,
+        "columns_only_in_fresh": "",
+        "columns_only_in_snapshot": "",
+        "fresh_retrieved_utc": "2026-11-15T18:52:58Z",
+        "identical_content": true,
+        "keys_only_in_fresh": 0,
+        "keys_only_in_snapshot": 0,
+        "rows_fresh": 35,
+        "rows_snapshot": 35,
+        "snapshot_date": "2026-09-28",
+        "source": "EPA annual AQI by county 2023 (NC rows)",
+        "source_last_changed": "Mon, 13 Jul 2026 15:47:39 GMT"
+      },
+      {
+        "cells_compared": 200,
+        "cells_different": 0,
+        "columns_only_in_fresh": "",
+        "columns_only_in_snapshot": "",
+        "fresh_retrieved_utc": "2026-11-15T18:52:58Z",
+        "identical_content": true,
+        "keys_only_in_fresh": 0,
+        "keys_only_in_snapshot": 0,
+        "rows_fresh": 100,
+        "rows_snapshot": 100,
+        "snapshot_date": "2026-11-15",
+        "source": "Census county boundaries 2023 (NC polygons)",
+        "source_last_changed": "Tue, 16 Apr 2024 12:24:27 GMT"
+      }
+    ],
+    "epa_rows_all_states": 993,
+    "epa_zip_last_modified": "Mon, 13 Jul 2026 15:47:39 GMT",
+    "fresh_folder": "data/fresh/2026-11-15",
+    "snapshot_date": "2026-09-28",
+    "snapshot_sha256": {
+      "cdc_places_nc_raw.csv": "b66a16596357222c5a25d9c7b22c0a6f61fa643e6105d432a5904a6f1f5c2b1d",
+      "census_nc_county_boundaries.geojson": "f155ea262200502e6078d3c53d91e7f31e11d8cca4869476796cc5c599ca4f6e",
+      "epa_aqi_nc_raw.csv": "cc803fd99159e5b97555c9df282372ab0755d7bba821fe8932cd7d18c3ff9e19"
+    }
+  },
+  "audit": {
+    "aqi_days_max": 365,
+    "aqi_days_median": 353.0,
+    "aqi_days_min": 116,
+    "n_aqi_ge300": 23,
+    "n_checks": 42,
+    "n_counties": 100,
+    "n_failed": 0,
+    "n_passed": 42,
+    "n_with_aqi": 35,
+    "n_without_aqi": 65,
+    "population_max": 1190275,
+    "population_max_county": "Wake",
+    "population_min": 3461,
+    "population_min_county": "Tyrrell",
+    "population_total": 10835491,
+    "processed_sha256": "15ae4060f5f377fca52c1366f5eac53285d11e0b83a70e4ee204f00ff68c5132",
+    "raw_rows": 8000,
+    "selected_rows": 700
+  },
+  "eda": {
+    "aqi_coverage": {
+      "asthma": {
+        "difference_in_means": -0.122,
+        "n_with_aqi": 35,
+        "n_without_aqi": 65,
+        "standardized_difference": -0.19,
+        "with_aqi_mean": 11.111,
+        "with_aqi_median": 11.0,
+        "without_aqi_mean": 11.234,
+        "without_aqi_median": 11.1
+      },
+      "copd": {
+        "difference_in_means": -0.394,
+        "n_with_aqi": 35,
+        "n_without_aqi": 65,
+        "standardized_difference": -0.345,
+        "with_aqi_mean": 6.877,
+        "with_aqi_median": 7.1,
+        "without_aqi_mean": 7.271,
+        "without_aqi_median": 7.4
+      },
+      "housing": {
+        "difference_in_means": -0.929,
+        "n_with_aqi": 35,
+        "n_without_aqi": 65,
+        "standardized_difference": -0.239,
+        "with_aqi_mean": 13.971,
+        "with_aqi_median": 13.0,
+        "without_aqi_mean": 14.9,
+        "without_aqi_median": 14.0
+      },
+      "inactivity": {
+        "difference_in_means": -1.061,
+        "n_with_aqi": 35,
+        "n_without_aqi": 65,
+        "standardized_difference": -0.275,
+        "with_aqi_mean": 24.637,
+        "with_aqi_median": 24.5,
+        "without_aqi_mean": 25.698,
+        "without_aqi_median": 25.7
+      },
+      "population": {
+        "difference_in_means": 118924.446,
+        "n_with_aqi": 35,
+        "n_without_aqi": 65,
+        "standardized_difference": 0.693,
+        "with_aqi_mean": 185655.8,
+        "with_aqi_median": 69615.0,
+        "without_aqi_mean": 66731.354,
+        "without_aqi_median": 45532.0
+      },
+      "smoking": {
+        "difference_in_means": -0.803,
+        "n_with_aqi": 35,
+        "n_without_aqi": 65,
+        "standardized_difference": -0.305,
+        "with_aqi_mean": 15.48,
+        "with_aqi_median": 15.7,
+        "without_aqi_mean": 16.283,
+        "without_aqi_median": 16.5
+      },
+      "transport": {
+        "difference_in_means": -0.677,
+        "n_with_aqi": 35,
+        "n_without_aqi": 65,
+        "standardized_difference": -0.264,
+        "with_aqi_mean": 9.457,
+        "with_aqi_median": 9.0,
+        "without_aqi_mean": 10.134,
+        "without_aqi_median": 9.4
+      },
+      "uninsured": {
+        "difference_in_means": -0.598,
+        "n_with_aqi": 35,
+        "n_without_aqi": 65,
+        "standardized_difference": -0.295,
+        "with_aqi_mean": 11.349,
+        "with_aqi_median": 11.5,
+        "without_aqi_mean": 11.946,
+        "without_aqi_median": 11.8
+      }
+    },
+    "aqi_population_share": 0.5996916060379728,
+    "copd_highest": {
+      "copd": 10.3,
+      "copd_lcl": 9.0,
+      "copd_ucl": 11.6,
+      "county": "Robeson",
+      "population": 117365,
+      "smoking": 23.1
+    },
+    "copd_interval_overlap": {
+      "median_estimate": 7.3,
+      "n_interval_above_median": 8,
+      "n_interval_below_median": 18,
+      "n_interval_excludes_median": 26,
+      "n_pairs": 4950,
+      "share_pairs_overlapping": 0.8537373737373737
+    },
+    "copd_lowest": {
+      "copd": 4.4,
+      "copd_lcl": 3.6,
+      "copd_ucl": 5.3,
+      "county": "Wake",
+      "population": 1190275,
+      "smoking": 9.5
+    },
+    "corr_copd": {
+      "asthma": 0.822,
+      "housing": 0.782,
+      "inactivity": 0.906,
+      "smoking": 0.989,
+      "transport": 0.843,
+      "uninsured": 0.82
+    },
+    "corr_inactivity_transport": 0.9693807396652729,
+    "corr_max": 0.9886116397684751,
+    "corr_min": 0.6894189361625528,
+    "corr_transport_housing": 0.9885884580314338,
+    "descriptives": {
+      "asthma": {
+        "cdc_ci_halfwidth_mean": 1.43,
+        "halfwidth_to_sd": 2.217,
+        "max": 13.3,
+        "mean": 11.191,
+        "median": 11.05,
+        "min": 10.0,
+        "n": 100,
+        "q1": 10.8,
+        "q3": 11.5,
+        "sd": 0.645
+      },
+      "copd": {
+        "cdc_ci_halfwidth_mean": 1.189,
+        "halfwidth_to_sd": 1.034,
+        "max": 10.3,
+        "mean": 7.133,
+        "median": 7.3,
+        "min": 4.4,
+        "n": 100,
+        "q1": 6.375,
+        "q3": 7.825,
+        "sd": 1.15
+      },
+      "housing": {
+        "cdc_ci_halfwidth_mean": 2.567,
+        "halfwidth_to_sd": 0.659,
+        "max": 23.5,
+        "mean": 14.575,
+        "median": 13.9,
+        "min": 8.5,
+        "n": 100,
+        "q1": 11.575,
+        "q3": 17.1,
+        "sd": 3.897
+      },
+      "inactivity": {
+        "cdc_ci_halfwidth_mean": 4.781,
+        "halfwidth_to_sd": 1.235,
+        "max": 34.9,
+        "mean": 25.327,
+        "median": 24.9,
+        "min": 17.9,
+        "n": 100,
+        "q1": 22.575,
+        "q3": 27.625,
+        "sd": 3.871
+      },
+      "smoking": {
+        "cdc_ci_halfwidth_mean": 3.097,
+        "halfwidth_to_sd": 1.169,
+        "max": 23.1,
+        "mean": 16.002,
+        "median": 16.2,
+        "min": 9.5,
+        "n": 100,
+        "q1": 14.25,
+        "q3": 17.6,
+        "sd": 2.649
+      },
+      "transport": {
+        "cdc_ci_halfwidth_mean": 1.601,
+        "halfwidth_to_sd": 0.623,
+        "max": 17.6,
+        "mean": 9.897,
+        "median": 9.3,
+        "min": 5.9,
+        "n": 100,
+        "q1": 8.125,
+        "q3": 11.5,
+        "sd": 2.57
+      },
+      "uninsured": {
+        "cdc_ci_halfwidth_mean": 2.617,
+        "halfwidth_to_sd": 1.286,
+        "max": 17.2,
+        "mean": 11.737,
+        "median": 11.7,
+        "min": 7.9,
+        "n": 100,
+        "q1": 10.2,
+        "q3": 12.9,
+        "sd": 2.035
+      }
+    }
+  },
+  "q1": {
+    "bootstrap_by_county": [
+      {
+        "county": "Robeson",
+        "mean_slope_housing": -0.33535,
+        "mean_slope_transport": 0.4297,
+        "mean_slope_uninsured": 0.02801,
+        "share_of_resamples": 0.3715,
+        "times_in_resample": "not drawn"
+      },
+      {
+        "county": "Robeson",
+        "mean_slope_housing": -0.21146,
+        "mean_slope_transport": 0.21705,
+        "mean_slope_uninsured": 0.01654,
+        "share_of_resamples": 0.3715,
+        "times_in_resample": "drawn once"
+      },
+      {
+        "county": "Robeson",
+        "mean_slope_housing": -0.17718,
+        "mean_slope_transport": 0.15817,
+        "mean_slope_uninsured": 0.01322,
+        "share_of_resamples": 0.257,
+        "times_in_resample": "drawn twice or more"
+      }
+    ],
+    "breusch_pagan": {
+      "p": 0.04014803650901085,
+      "statistic": 11.634887297432883
+    },
+    "coefficients": {
+      "asthma": {
+        "baseline": {
+          "const": {
+            "boot_high": 7.82494,
+            "boot_low": 7.03098,
+            "boot_share_positive": 1.0,
+            "ci_high": 7.77333,
+            "ci_low": 7.02301,
+            "estimate": 7.39817,
+            "estimate_per_sd": NaN,
+            "hc3_high": 7.80923,
+            "hc3_low": 6.98712,
+            "p": 0.0,
+            "p_hc3": 0.0,
+            "se": 0.18902,
+            "se_hc3": 0.20711
+          },
+          "inactivity": {
+            "boot_high": 0.17519,
+            "boot_low": 0.08427,
+            "boot_share_positive": 1.0,
+            "ci_high": 0.16744,
+            "ci_low": 0.09155,
+            "estimate": 0.12949,
+            "estimate_per_sd": 0.50127,
+            "hc3_high": 0.18254,
+            "hc3_low": 0.07645,
+            "p": 0.0,
+            "p_hc3": 0.0,
+            "se": 0.01912,
+            "se_hc3": 0.02673
+          },
+          "smoking": {
+            "boot_high": 0.09908,
+            "boot_low": -0.03889,
+            "boot_share_positive": 0.7825,
+            "ci_high": 0.08752,
+            "ci_low": -0.02338,
+            "estimate": 0.03207,
+            "estimate_per_sd": 0.08494,
+            "hc3_high": 0.11389,
+            "hc3_low": -0.04975,
+            "p": 0.25389,
+            "p_hc3": 0.43854,
+            "se": 0.02794,
+            "se_hc3": 0.04123
+          }
+        },
+        "expanded": {
+          "const": {
+            "boot_high": 9.02285,
+            "boot_low": 8.04307,
+            "boot_share_positive": 1.0,
+            "ci_high": 9.06101,
+            "ci_low": 8.13263,
+            "estimate": 8.59682,
+            "estimate_per_sd": NaN,
+            "hc3_high": 9.13392,
+            "hc3_low": 8.05971,
+            "p": 0.0,
+            "p_hc3": 0.0,
+            "se": 0.23379,
+            "se_hc3": 0.27051
+          },
+          "housing": {
+            "boot_high": 0.24374,
+            "boot_low": -0.10586,
+            "boot_share_positive": 0.5225,
+            "ci_high": 0.08424,
+            "ci_low": -0.09997,
+            "estimate": -0.00786,
+            "estimate_per_sd": -0.03065,
+            "hc3_high": 0.28469,
+            "hc3_low": -0.30041,
+            "p": 0.86574,
+            "p_hc3": 0.95755,
+            "se": 0.04639,
+            "se_hc3": 0.14734
+          },
+          "inactivity": {
+            "boot_high": 0.16715,
+            "boot_low": 0.00065,
+            "boot_share_positive": 0.975,
+            "ci_high": 0.14827,
+            "ci_low": 0.01051,
+            "estimate": 0.07939,
+            "estimate_per_sd": 0.30732,
+            "hc3_high": 0.17773,
+            "hc3_low": -0.01895,
+            "p": 0.02436,
+            "p_hc3": 0.11232,
+            "se": 0.03469,
+            "se_hc3": 0.04953
+          },
+          "smoking": {
+            "boot_high": 0.14184,
+            "boot_low": -0.01442,
+            "boot_share_positive": 0.942,
+            "ci_high": 0.10563,
+            "ci_low": -0.00432,
+            "estimate": 0.05065,
+            "estimate_per_sd": 0.13417,
+            "hc3_high": 0.16581,
+            "hc3_low": -0.0645,
+            "p": 0.07049,
+            "p_hc3": 0.38469,
+            "se": 0.02769,
+            "se_hc3": 0.058
+          },
+          "transport": {
+            "boot_high": 0.34726,
+            "boot_low": -0.25062,
+            "boot_share_positive": 0.7665,
+            "ci_high": 0.34624,
+            "ci_low": 0.07158,
+            "estimate": 0.20891,
+            "estimate_per_sd": 0.53697,
+            "hc3_high": 0.69158,
+            "hc3_low": -0.27376,
+            "p": 0.00325,
+            "p_hc3": 0.39232,
+            "se": 0.06916,
+            "se_hc3": 0.24309
+          },
+          "uninsured": {
+            "boot_high": -0.14175,
+            "boot_low": -0.24801,
+            "boot_share_positive": 0.0,
+            "ci_high": -0.14336,
+            "ci_low": -0.22812,
+            "estimate": -0.18574,
+            "estimate_per_sd": -0.37802,
+            "hc3_high": -0.12532,
+            "hc3_low": -0.24616,
+            "p": 0.0,
+            "p_hc3": 0.0,
+            "se": 0.02135,
+            "se_hc3": 0.03043
+          }
+        }
+      },
+      "copd": {
+        "baseline": {
+          "const": {
+            "boot_high": 0.5109,
+            "boot_low": 0.1158,
+            "boot_share_positive": 0.998,
+            "ci_high": 0.54413,
+            "ci_low": 0.08555,
+            "estimate": 0.31484,
+            "estimate_per_sd": NaN,
+            "hc3_high": 0.51247,
+            "hc3_low": 0.11721,
+            "p": 0.00762,
+            "p_hc3": 0.00209,
+            "se": 0.11553,
+            "se_hc3": 0.09958
+          },
+          "inactivity": {
+            "boot_high": 0.01276,
+            "boot_low": -0.04265,
+            "boot_share_positive": 0.164,
+            "ci_high": 0.01022,
+            "ci_low": -0.03616,
+            "estimate": -0.01297,
+            "estimate_per_sd": -0.05022,
+            "hc3_high": 0.01831,
+            "hc3_low": -0.04426,
+            "p": 0.26963,
+            "p_hc3": 0.41257,
+            "se": 0.01168,
+            "se_hc3": 0.01576
+          },
+          "smoking": {
+            "boot_high": 0.49253,
+            "boot_low": 0.40761,
+            "boot_share_positive": 1.0,
+            "ci_high": 0.48051,
+            "ci_low": 0.41272,
+            "estimate": 0.44661,
+            "estimate_per_sd": 1.18294,
+            "hc3_high": 0.49536,
+            "hc3_low": 0.39787,
+            "p": 0.0,
+            "p_hc3": 0.0,
+            "se": 0.01708,
+            "se_hc3": 0.02456
+          }
+        },
+        "expanded": {
+          "const": {
+            "boot_high": 0.10852,
+            "boot_low": -0.80604,
+            "boot_share_positive": 0.075,
+            "ci_high": 0.01085,
+            "ci_low": -0.76624,
+            "estimate": -0.3777,
+            "estimate_per_sd": NaN,
+            "hc3_high": 0.1536,
+            "hc3_low": -0.909,
+            "p": 0.05661,
+            "p_hc3": 0.1614,
+            "se": 0.19569,
+            "se_hc3": 0.26759
+          },
+          "housing": {
+            "boot_high": -0.14187,
+            "boot_low": -0.4344,
+            "boot_share_positive": 0.0,
+            "ci_high": -0.1335,
+            "ci_low": -0.28769,
+            "estimate": -0.21059,
+            "estimate_per_sd": -0.82076,
+            "hc3_high": 0.00741,
+            "hc3_low": -0.4286,
+            "p": 0.0,
+            "p_hc3": 0.05815,
+            "se": 0.03883,
+            "se_hc3": 0.1098
+          },
+          "inactivity": {
+            "boot_high": 0.18114,
+            "boot_low": 0.03418,
+            "boot_share_positive": 0.9995,
+            "ci_high": 0.16831,
+            "ci_low": 0.05299,
+            "estimate": 0.11065,
+            "estimate_per_sd": 0.42834,
+            "hc3_high": 0.20171,
+            "hc3_low": 0.0196,
+            "p": 0.00025,
+            "p_hc3": 0.01777,
+            "se": 0.02904,
+            "se_hc3": 0.04586
+          },
+          "smoking": {
+            "boot_high": 0.39229,
+            "boot_low": 0.26441,
+            "boot_share_positive": 1.0,
+            "ci_high": 0.38745,
+            "ci_low": 0.29543,
+            "estimate": 0.34144,
+            "estimate_per_sd": 0.90437,
+            "hc3_high": 0.43137,
+            "hc3_low": 0.25151,
+            "p": 0.0,
+            "p_hc3": 0.0,
+            "se": 0.02317,
+            "se_hc3": 0.04529
+          },
+          "transport": {
+            "boot_high": 0.64158,
+            "boot_low": 0.11147,
+            "boot_share_positive": 1.0,
+            "ci_high": 0.32869,
+            "ci_low": 0.09879,
+            "estimate": 0.21374,
+            "estimate_per_sd": 0.54938,
+            "hc3_high": 0.57584,
+            "hc3_low": -0.14837,
+            "p": 0.00037,
+            "p_hc3": 0.24417,
+            "se": 0.05789,
+            "se_hc3": 0.18237
+          },
+          "uninsured": {
+            "boot_high": 0.05999,
+            "boot_low": -0.02044,
+            "boot_share_positive": 0.839,
+            "ci_high": 0.05239,
+            "ci_low": -0.01856,
+            "estimate": 0.01692,
+            "estimate_per_sd": 0.03443,
+            "hc3_high": 0.06239,
+            "hc3_low": -0.02855,
+            "p": 0.3461,
+            "p_hc3": 0.46186,
+            "se": 0.01787,
+            "se_hc3": 0.0229
+          }
+        }
+      }
+    },
+    "collinearity": {
+      "condition_number_standardized": 31.327527533128535,
+      "pc1_pc2_share_of_variance": 0.9605792846254587,
+      "pc1_share_of_variance": 0.9175165449195057
+    },
+    "comparison": {
+      "asthma": {
+        "delta_r2": 0.1191194673839504,
+        "f_p": 4.922223743775646e-20,
+        "f_stat": 52.55189430658265,
+        "wald_hc3_f": 30.642748584552745,
+        "wald_hc3_p": 6.6271713600902e-14
+      },
+      "copd": {
+        "delta_r2": 0.006695074935059053,
+        "f_p": 2.3869979162085797e-07,
+        "f_stat": 13.38921097487294,
+        "wald_hc3_f": 5.149156507803035,
+        "wald_hc3_p": 0.002434570238889693
+      }
+    },
+    "cooks_threshold": 0.04,
+    "fit": {
+      "asthma": {
+        "baseline": {
+          "adj_r2": 0.80594,
+          "aic": 35.12113,
+          "bic": 42.93664,
+          "loo_rmse": 0.29254,
+          "n": 100,
+          "predictors": 2,
+          "r2": 0.80986,
+          "residual_sd": 0.28419
+        },
+        "expanded": {
+          "adj_r2": 0.9252,
+          "aic": -57.35558,
+          "bic": -41.72455,
+          "loo_rmse": 0.19998,
+          "n": 100,
+          "predictors": 5,
+          "r2": 0.92898,
+          "residual_sd": 0.17644
+        }
+      },
+      "copd": {
+        "baseline": {
+          "adj_r2": 0.97718,
+          "aic": -63.35113,
+          "bic": -55.53562,
+          "loo_rmse": 0.17745,
+          "n": 100,
+          "predictors": 2,
+          "r2": 0.97764,
+          "residual_sd": 0.17369
+        },
+        "expanded": {
+          "adj_r2": 0.9835,
+          "aic": -92.93065,
+          "bic": -77.29963,
+          "loo_rmse": 0.16502,
+          "n": 100,
+          "predictors": 5,
+          "r2": 0.98433,
+          "residual_sd": 0.14769
+        }
+      }
+    },
+    "influence_top": [
+      {
+        "cooks_d": 1.7659,
+        "county": "Robeson",
+        "leverage": 0.5721,
+        "population": 117365,
+        "slope_change_if_dropped_housing": -0.1049,
+        "slope_change_if_dropped_transport": 0.1738,
+        "slope_change_if_dropped_uninsured": 0.0089,
+        "studentized_residual": -2.9259
+      },
+      {
+        "cooks_d": 0.5187,
+        "county": "Swain",
+        "leverage": 0.2943,
+        "population": 13916,
+        "slope_change_if_dropped_housing": -0.0035,
+        "slope_change_if_dropped_transport": 0.0366,
+        "slope_change_if_dropped_uninsured": 0.0042,
+        "studentized_residual": -2.8319
+      },
+      {
+        "cooks_d": 0.0995,
+        "county": "Watauga",
+        "leverage": 0.0641,
+        "population": 54748,
+        "slope_change_if_dropped_housing": 0.0204,
+        "slope_change_if_dropped_transport": -0.0247,
+        "slope_change_if_dropped_uninsured": 0.0074,
+        "studentized_residual": 3.084
+      },
+      {
+        "cooks_d": 0.0812,
+        "county": "Duplin",
+        "leverage": 0.1836,
+        "population": 49520,
+        "slope_change_if_dropped_housing": -0.0018,
+        "slope_change_if_dropped_transport": -0.0001,
+        "slope_change_if_dropped_uninsured": -0.0113,
+        "studentized_residual": 1.4814
+      },
+      {
+        "cooks_d": 0.046,
+        "county": "Buncombe",
+        "leverage": 0.0888,
+        "population": 275901,
+        "slope_change_if_dropped_housing": -0.001,
+        "slope_change_if_dropped_transport": -0.0084,
+        "slope_change_if_dropped_uninsured": -0.0035,
+        "studentized_residual": 1.7002
+      }
+    ],
+    "leave_one_out": {
+      "housing": {
+        "estimate_all_counties": -0.21059,
+        "loo_max": -0.19022,
+        "loo_max_dropped": "Watauga",
+        "loo_min": -0.31546,
+        "loo_min_dropped": "Robeson",
+        "n_sign_changes": 0
+      },
+      "transport": {
+        "estimate_all_counties": 0.21374,
+        "loo_max": 0.38755,
+        "loo_max_dropped": "Robeson",
+        "loo_min": 0.18902,
+        "loo_min_dropped": "Watauga",
+        "n_sign_changes": 0
+      },
+      "uninsured": {
+        "estimate_all_counties": 0.01692,
+        "loo_max": 0.02582,
+        "loo_max_dropped": "Robeson",
+        "loo_min": 0.00561,
+        "loo_min_dropped": "Duplin",
+        "n_sign_changes": 0
+      }
+    },
+    "most_influential_county": "Robeson",
+    "n": 100,
+    "n_boot": 2000,
+    "n_cooks_above_threshold": 7,
+    "plausible_values": {
+      "corr_copd_smoking_high": 0.8155865797338812,
+      "corr_copd_smoking_low": 0.6766991516999711,
+      "corr_copd_smoking_median": 0.7510510892824103,
+      "n_draws": 2000,
+      "r2_baseline_median": 0.6224887239991633,
+      "r2_expanded_median": 0.6588209500175528,
+      "r2_gain_median": 0.03238952205063006,
+      "slopes": {
+        "housing": {
+          "estimate_published_values": -0.21059,
+          "sim_high": 0.06958,
+          "sim_low": -0.09981,
+          "sim_median": -0.01357,
+          "sim_share_positive": 0.3705
+        },
+        "inactivity": {
+          "estimate_published_values": 0.11065,
+          "sim_high": 0.10218,
+          "sim_low": -0.0136,
+          "sim_median": 0.04698,
+          "sim_share_positive": 0.9335
+        },
+        "smoking": {
+          "estimate_published_values": 0.34144,
+          "sim_high": 0.26258,
+          "sim_low": 0.11665,
+          "sim_median": 0.18463,
+          "sim_share_positive": 1.0
+        },
+        "transport": {
+          "estimate_published_values": 0.21374,
+          "sim_high": 0.25319,
+          "sim_low": -0.02746,
+          "sim_median": 0.11327,
+          "sim_share_positive": 0.939
+        },
+        "uninsured": {
+          "estimate_published_values": 0.01692,
+          "sim_high": 0.15351,
+          "sim_low": -0.03194,
+          "sim_median": 0.06062,
+          "sim_share_positive": 0.91
+        }
+      }
+    },
+    "seed": 320,
+    "sensitivity": [
+      {
+        "analysis": "all 100 counties",
+        "estimate": 0.21374,
+        "hc3_high": 0.57584,
+        "hc3_low": -0.14837,
+        "n": 100,
+        "term": "transport"
+      },
+      {
+        "analysis": "all 100 counties",
+        "estimate": 0.01692,
+        "hc3_high": 0.06239,
+        "hc3_low": -0.02855,
+        "n": 100,
+        "term": "uninsured"
+      },
+      {
+        "analysis": "all 100 counties",
+        "estimate": -0.21059,
+        "hc3_high": 0.00741,
+        "hc3_low": -0.4286,
+        "n": 100,
+        "term": "housing"
+      },
+      {
+        "analysis": "without Robeson (largest Cook's distance)",
+        "estimate": 0.38755,
+        "hc3_high": 0.72223,
+        "hc3_low": 0.05287,
+        "n": 99,
+        "term": "transport"
+      },
+      {
+        "analysis": "without Robeson (largest Cook's distance)",
+        "estimate": 0.02582,
+        "hc3_high": 0.07117,
+        "hc3_low": -0.01953,
+        "n": 99,
+        "term": "uninsured"
+      },
+      {
+        "analysis": "without Robeson (largest Cook's distance)",
+        "estimate": -0.31546,
+        "hc3_high": -0.15348,
+        "hc3_low": -0.47745,
+        "n": 99,
+        "term": "housing"
+      },
+      {
+        "analysis": "without the three most influential counties",
+        "estimate": 0.4873,
+        "hc3_high": 0.6954,
+        "hc3_low": 0.27919,
+        "n": 97,
+        "term": "transport"
+      },
+      {
+        "analysis": "without the three most influential counties",
+        "estimate": 0.04114,
+        "hc3_high": 0.07942,
+        "hc3_low": 0.00286,
+        "n": 97,
+        "term": "uninsured"
+      },
+      {
+        "analysis": "without the three most influential counties",
+        "estimate": -0.34412,
+        "hc3_high": -0.2318,
+        "hc3_low": -0.45644,
+        "n": 97,
+        "term": "housing"
+      },
+      {
+        "analysis": "composite social index, alone",
+        "estimate": 0.97067,
+        "hc3_high": 1.08274,
+        "hc3_low": 0.85861,
+        "n": 100,
+        "term": "social_index (per 1 SD)"
+      },
+      {
+        "analysis": "composite social index, with smoking and inactivity",
+        "estimate": -0.17224,
+        "hc3_high": 0.08648,
+        "hc3_low": -0.43096,
+        "n": 100,
+        "term": "social_index (per 1 SD)"
+      }
+    ],
+    "slices": [
+      {
+        "group": "smallest third",
+        "max_abs_loo_error": 0.5606,
+        "mean_abs_loo_error": 0.1558,
+        "mean_loo_error": -0.0415,
+        "model": "baseline",
+        "n": 34,
+        "slice": "population third"
+      },
+      {
+        "group": "middle third",
+        "max_abs_loo_error": 0.5489,
+        "mean_abs_loo_error": 0.1517,
+        "mean_loo_error": 0.0418,
+        "model": "baseline",
+        "n": 33,
+        "slice": "population third"
+      },
+      {
+        "group": "largest third",
+        "max_abs_loo_error": 0.3516,
+        "mean_abs_loo_error": 0.1098,
+        "mean_loo_error": -0.0006,
+        "model": "baseline",
+        "n": 33,
+        "slice": "population third"
+      },
+      {
+        "group": "smallest third",
+        "max_abs_loo_error": 0.4803,
+        "mean_abs_loo_error": 0.1332,
+        "mean_loo_error": -0.0176,
+        "model": "expanded",
+        "n": 34,
+        "slice": "population third"
+      },
+      {
+        "group": "middle third",
+        "max_abs_loo_error": 0.4508,
+        "mean_abs_loo_error": 0.1267,
+        "mean_loo_error": 0.0353,
+        "model": "expanded",
+        "n": 33,
+        "slice": "population third"
+      },
+      {
+        "group": "largest third",
+        "max_abs_loo_error": 0.6355,
+        "mean_abs_loo_error": 0.1212,
+        "mean_loo_error": -0.0297,
+        "model": "expanded",
+        "n": 33,
+        "slice": "population third"
+      },
+      {
+        "group": "western third",
+        "max_abs_loo_error": 0.5606,
+        "mean_abs_loo_error": 0.176,
+        "mean_loo_error": 0.0757,
+        "model": "baseline",
+        "n": 34,
+        "slice": "longitude third"
+      },
+      {
+        "group": "central third",
+        "max_abs_loo_error": 0.3516,
+        "mean_abs_loo_error": 0.1149,
+        "mean_loo_error": -0.0251,
+        "model": "baseline",
+        "n": 33,
+        "slice": "longitude third"
+      },
+      {
+        "group": "eastern third",
+        "max_abs_loo_error": 0.32,
+        "mean_abs_loo_error": 0.1257,
+        "mean_loo_error": -0.0544,
+        "model": "baseline",
+        "n": 33,
+        "slice": "longitude third"
+      },
+      {
+        "group": "western third",
+        "max_abs_loo_error": 0.4803,
+        "mean_abs_loo_error": 0.1408,
+        "mean_loo_error": 0.0448,
+        "model": "expanded",
+        "n": 34,
+        "slice": "longitude third"
+      },
+      {
+        "group": "central third",
+        "max_abs_loo_error": 0.6355,
+        "mean_abs_loo_error": 0.1346,
+        "mean_loo_error": -0.0603,
+        "model": "expanded",
+        "n": 33,
+        "slice": "longitude third"
+      },
+      {
+        "group": "eastern third",
+        "max_abs_loo_error": 0.3099,
+        "mean_abs_loo_error": 0.1055,
+        "mean_loo_error": 0.0016,
+        "model": "expanded",
+        "n": 33,
+        "slice": "longitude third"
+      },
+      {
+        "group": "with AQI records",
+        "max_abs_loo_error": 0.5606,
+        "mean_abs_loo_error": 0.1291,
+        "mean_loo_error": -0.0337,
+        "model": "baseline",
+        "n": 35,
+        "slice": "AQI records"
+      },
+      {
+        "group": "without AQI records",
+        "max_abs_loo_error": 0.5489,
+        "mean_abs_loo_error": 0.1447,
+        "mean_loo_error": 0.0174,
+        "model": "baseline",
+        "n": 65,
+        "slice": "AQI records"
+      },
+      {
+        "group": "with AQI records",
+        "max_abs_loo_error": 0.4803,
+        "mean_abs_loo_error": 0.1174,
+        "mean_loo_error": -0.0319,
+        "model": "expanded",
+        "n": 35,
+        "slice": "AQI records"
+      },
+      {
+        "group": "without AQI records",
+        "max_abs_loo_error": 0.6355,
+        "mean_abs_loo_error": 0.1324,
+        "mean_loo_error": 0.0108,
+        "model": "expanded",
+        "n": 65,
+        "slice": "AQI records"
+      }
+    ],
+    "smoking_only_r2": 0.9773529742857137,
+    "spatial": {
+      "COPD estimate": {
+        "morans_i": 0.29779,
+        "p_permutation_one_sided": 0.0001
+      },
+      "baseline model residuals": {
+        "morans_i": 0.19947,
+        "p_permutation_one_sided": 0.0004
+      },
+      "expanded model residuals": {
+        "morans_i": 0.2105,
+        "p_permutation_one_sided": 0.0006
+      }
+    },
+    "specifications": {
+      "asthma": {
+        "housing": {
+          "alone": {
+            "ci_high": 0.16375,
+            "ci_low": 0.13526,
+            "estimate": 0.1495,
+            "hc3_high": 0.16616,
+            "hc3_low": 0.13284
+          },
+          "with all five predictors": {
+            "ci_high": 0.08424,
+            "ci_low": -0.09997,
+            "estimate": -0.00786,
+            "hc3_high": 0.28469,
+            "hc3_low": -0.30041
+          },
+          "with smoking and inactivity": {
+            "ci_high": 0.21453,
+            "ci_low": 0.10676,
+            "estimate": 0.16065,
+            "hc3_high": 0.21287,
+            "hc3_low": 0.10843
+          }
+        },
+        "transport": {
+          "alone": {
+            "ci_high": 0.2515,
+            "ci_low": 0.2137,
+            "estimate": 0.2326,
+            "hc3_high": 0.25376,
+            "hc3_low": 0.21144
+          },
+          "with all five predictors": {
+            "ci_high": 0.34624,
+            "ci_low": 0.07158,
+            "estimate": 0.20891,
+            "hc3_high": 0.69158,
+            "hc3_low": -0.27376
+          },
+          "with smoking and inactivity": {
+            "ci_high": 0.34006,
+            "ci_low": 0.18652,
+            "estimate": 0.26329,
+            "hc3_high": 0.33277,
+            "hc3_low": 0.19382
+          }
+        },
+        "uninsured": {
+          "alone": {
+            "ci_high": 0.26456,
+            "ci_low": 0.1725,
+            "estimate": 0.21853,
+            "hc3_high": 0.28518,
+            "hc3_low": 0.15188
+          },
+          "with all five predictors": {
+            "ci_high": -0.14336,
+            "ci_low": -0.22812,
+            "estimate": -0.18574,
+            "hc3_high": -0.12532,
+            "hc3_low": -0.24616
+          },
+          "with smoking and inactivity": {
+            "ci_high": -0.17158,
+            "ci_low": -0.26985,
+            "estimate": -0.22071,
+            "hc3_high": -0.16307,
+            "hc3_low": -0.27836
+          }
+        }
+      },
+      "copd": {
+        "housing": {
+          "alone": {
+            "ci_high": 0.26748,
+            "ci_low": 0.19372,
+            "estimate": 0.2306,
+            "hc3_high": 0.26515,
+            "hc3_low": 0.19605
+          },
+          "with all five predictors": {
+            "ci_high": -0.1335,
+            "ci_low": -0.28769,
+            "estimate": -0.21059,
+            "hc3_high": 0.00741,
+            "hc3_low": -0.4286
+          },
+          "with smoking and inactivity": {
+            "ci_high": -0.04934,
+            "ci_low": -0.11838,
+            "estimate": -0.08386,
+            "hc3_high": -0.04492,
+            "hc3_low": -0.1228
+          }
+        },
+        "transport": {
+          "alone": {
+            "ci_high": 0.4253,
+            "ci_low": 0.32884,
+            "estimate": 0.37707,
+            "hc3_high": 0.41854,
+            "hc3_low": 0.3356
+          },
+          "with all five predictors": {
+            "ci_high": 0.32869,
+            "ci_low": 0.09879,
+            "estimate": 0.21374,
+            "hc3_high": 0.57584,
+            "hc3_low": -0.14837
+          },
+          "with smoking and inactivity": {
+            "ci_high": -0.02062,
+            "ci_low": -0.1307,
+            "estimate": -0.07566,
+            "hc3_high": -0.00038,
+            "hc3_low": -0.15093
+          }
+        },
+        "uninsured": {
+          "alone": {
+            "ci_high": 0.52813,
+            "ci_low": 0.39857,
+            "estimate": 0.46335,
+            "hc3_high": 0.54845,
+            "hc3_low": 0.37825
+          },
+          "with all five predictors": {
+            "ci_high": 0.05239,
+            "ci_low": -0.01856,
+            "estimate": 0.01692,
+            "hc3_high": 0.06239,
+            "hc3_low": -0.02855
+          },
+          "with smoking and inactivity": {
+            "ci_high": 0.07104,
+            "ci_low": -0.00919,
+            "estimate": 0.03092,
+            "hc3_high": 0.07341,
+            "hc3_low": -0.01156
+          }
+        }
+      }
+    },
+    "transport_housing_pair": [
+      {
+        "boot_high": 0.21299,
+        "boot_low": -0.05299,
+        "ci_high": 0.05963,
+        "ci_low": -0.05334,
+        "estimate": 0.00314,
+        "hc3_high": 0.16032,
+        "hc3_low": -0.15403,
+        "sd_across_counties": 3.22502,
+        "term": "mean of transport and housing (per 1 point)"
+      },
+      {
+        "boot_high": 0.53692,
+        "boot_low": 0.12929,
+        "ci_high": 0.30587,
+        "ci_low": 0.11846,
+        "estimate": 0.21216,
+        "hc3_high": 0.50052,
+        "hc3_low": -0.07619,
+        "sd_across_counties": 1.41054,
+        "term": "transport minus housing (per 1 point)"
+      }
+    ],
+    "vif": {
+      "baseline": {
+        "inactivity": 6.71,
+        "smoking": 6.71
+      },
+      "expanded": {
+        "housing": 103.95,
+        "inactivity": 57.36,
+        "smoking": 17.1,
+        "transport": 100.51,
+        "uninsured": 6.0
+      }
+    }
+  },
+  "q2": {
+    "adjusted": {
+      "boot_high": 0.008667844032746275,
+      "boot_low": -0.015182590328719256,
+      "ci_high": 0.00772961330460349,
+      "ci_low": -0.01533675305911887,
+      "estimate": -0.00380356987725769,
+      "hc3_high": 0.009205196746953588,
+      "hc3_low": -0.016812336501468968,
+      "loo_rmse": 0.16401981496347232,
+      "n": 35,
+      "r2": 0.9821041884665062
+    },
+    "adjusted_per_10_aqi": -0.0380356987725769,
+    "aqi_median_max": 52.0,
+    "aqi_median_min": 26.0,
+    "aqi_median_sd": 5.4790663499566135,
+    "behaviors_loo_rmse": 0.15999971042035047,
+    "behaviors_r2": 0.9818430160736419,
+    "corr_aqi_median_pct_gt100": 0.6659545978976457,
+    "corr_copd_aqi_median": -0.5214908569620883,
+    "corr_copd_aqi_pct_gt100": -0.393497607008655,
+    "corr_logpop_aqi_median": 0.705568366226523,
+    "corr_smoking_aqi_median": -0.5130775428421608,
+    "f_test": {
+      "p": 0.5061732119437989,
+      "statistic": 0.45241559253338004
+    },
+    "ge300": {
+      "boot_high": 0.010817245316822446,
+      "boot_low": -0.02132843704453212,
+      "ci_high": 0.00869040365357487,
+      "ci_low": -0.02231236791245064,
+      "estimate": -0.006810982129437884,
+      "hc3_high": 0.012984100424602869,
+      "hc3_low": -0.026606064683478637,
+      "loo_rmse": 0.17622711340764413,
+      "n": 23,
+      "r2": 0.984320915272947
+    },
+    "loo_slope_max": -0.0007967655744730781,
+    "loo_slope_max_dropped": "Swain",
+    "loo_slope_min": -0.0065550906297970855,
+    "loo_slope_min_dropped": "Montgomery",
+    "monitoring_profile": [
+      {
+        "max_days": 365.0,
+        "mean_copd": 8.0,
+        "median_days_with_aqi": 365.0,
+        "median_of_median_aqi": 37.0,
+        "min_days": 365.0,
+        "n_counties": 1,
+        "profile": "PM2.5 and NO2"
+      },
+      {
+        "max_days": 362.0,
+        "mean_copd": 7.275,
+        "median_days_with_aqi": 350.0,
+        "median_of_median_aqi": 38.0,
+        "min_days": 116.0,
+        "n_counties": 4,
+        "profile": "PM2.5 only"
+      },
+      {
+        "max_days": 350.0,
+        "mean_copd": 7.967,
+        "median_days_with_aqi": 305.0,
+        "median_of_median_aqi": 38.0,
+        "min_days": 302.0,
+        "n_counties": 3,
+        "profile": "ozone and PM10"
+      },
+      {
+        "max_days": 365.0,
+        "mean_copd": 6.438,
+        "median_days_with_aqi": 365.0,
+        "median_of_median_aqi": 44.5,
+        "min_days": 278.0,
+        "n_counties": 16,
+        "profile": "ozone and PM2.5 (some also PM10 or NO2)"
+      },
+      {
+        "max_days": 361.0,
+        "mean_copd": 6.973,
+        "median_days_with_aqi": 244.0,
+        "median_of_median_aqi": 43.0,
+        "min_days": 240.0,
+        "n_counties": 11,
+        "profile": "ozone only"
+      }
+    ],
+    "n": 35,
+    "n_boot": 2000,
+    "n_counties_any_day_gt100": 26,
+    "n_ge300": 23,
+    "pct_gt100": {
+      "boot_high": 0.1276186699470667,
+      "boot_low": -0.11079918569265204,
+      "ci_high": 0.07732184590764445,
+      "ci_low": -0.12178842120402887,
+      "estimate": -0.022233287648192213,
+      "hc3_high": 0.11687488856154019,
+      "hc3_low": -0.1613414638579246,
+      "loo_rmse": 0.16708743425847136,
+      "n": 35,
+      "r2": 0.9819637191933969
+    },
+    "pct_gt100_max": 2.066115702479339,
+    "unadjusted": {
+      "boot_high": -0.05462718820280595,
+      "boot_low": -0.16049448243788414,
+      "ci_high": -0.043587174115425106,
+      "ci_low": -0.16371324017188865,
+      "estimate": -0.10365020714365689,
+      "hc3_high": -0.05250536316295105,
+      "hc3_low": -0.15479505112436273,
+      "loo_rmse": 0.9621774286861501,
+      "n": 35,
+      "r2": 0.27195271389505304
+    }
+  },
+  "q3": {
+    "fold_cutoffs": [
+      8.04,
+      8.12
+    ],
+    "fold_n_high": [
+      4,
+      4,
+      6,
+      4,
+      4
+    ],
+    "grid_size": 14,
+    "missed_counties": [
+      {
+        "copd": 8.2,
+        "county": "Wilkes",
+        "cutoff": 8.12,
+        "p_baseline": 0.1652,
+        "p_penalized": 0.2755
+      },
+      {
+        "copd": 8.2,
+        "county": "Rutherford",
+        "cutoff": 8.12,
+        "p_baseline": 0.1881,
+        "p_penalized": 0.3329
+      },
+      {
+        "copd": 8.4,
+        "county": "Alleghany",
+        "cutoff": 8.04,
+        "p_baseline": 0.2864,
+        "p_penalized": 0.3166
+      },
+      {
+        "copd": 8.1,
+        "county": "Surry",
+        "cutoff": 8.04,
+        "p_baseline": 0.0768,
+        "p_penalized": 0.1762
+      }
+    ],
+    "n": 100,
+    "n_high_held_out_total": 22,
+    "n_high_statewide": 20,
+    "n_inner": 5,
+    "n_outer": 5,
+    "n_permutations": 100,
+    "n_repeats": 50,
+    "predictors_kept": {
+      "housing": 0.728,
+      "inactivity": 0.144,
+      "smoking": 1.0,
+      "transport": 0.112,
+      "uninsured": 0.78
+    },
+    "prespecified": {
+      "baseline": {
+        "average_precision": 0.98,
+        "false_negatives": 4,
+        "false_positives": 2,
+        "roc_auc": 0.99688,
+        "sensitivity": 0.83333
+      },
+      "penalized": {
+        "average_precision": 0.99,
+        "false_negatives": 4,
+        "false_positives": 1,
+        "roc_auc": 0.99688,
+        "sensitivity": 0.83333
+      }
+    },
+    "prespecified_fold_sd": {
+      "baseline": {
+        "average_precision": 0.02739,
+        "roc_auc": 0.00428,
+        "sensitivity": 0.1559
+      },
+      "penalized": {
+        "average_precision": 0.02236,
+        "roc_auc": 0.00699,
+        "sensitivity": 0.1559
+      }
+    },
+    "shuffled_outcome": {
+      "baseline": {
+        "mean_roc_auc": 0.49217,
+        "observed_roc_auc": 0.99688,
+        "p2_5": 0.3107,
+        "p97_5": 0.66176,
+        "permutations": 100,
+        "share_shuffled_at_or_above_observed": 0.0
+      },
+      "penalized": {
+        "mean_roc_auc": 0.4892,
+        "observed_roc_auc": 0.99688,
+        "p2_5": 0.29609,
+        "p97_5": 0.66027,
+        "permutations": 100,
+        "share_shuffled_at_or_above_observed": 0.0
+      }
+    },
+    "slices": [
+      {
+        "false_negatives_baseline": 1,
+        "false_negatives_penalized": 1,
+        "false_positives_baseline": 2,
+        "false_positives_penalized": 1,
+        "group": "smallest third",
+        "n": 34,
+        "n_high": 12,
+        "slice": "population third"
+      },
+      {
+        "false_negatives_baseline": 3,
+        "false_negatives_penalized": 3,
+        "false_positives_baseline": 0,
+        "false_positives_penalized": 0,
+        "group": "middle third",
+        "n": 33,
+        "n_high": 9,
+        "slice": "population third"
+      },
+      {
+        "false_negatives_baseline": 0,
+        "false_negatives_penalized": 0,
+        "false_positives_baseline": 0,
+        "false_positives_penalized": 0,
+        "group": "largest third",
+        "n": 33,
+        "n_high": 1,
+        "slice": "population third"
+      },
+      {
+        "false_negatives_baseline": 4,
+        "false_negatives_penalized": 4,
+        "false_positives_baseline": 0,
+        "false_positives_penalized": 0,
+        "group": "western third",
+        "n": 34,
+        "n_high": 5,
+        "slice": "longitude third"
+      },
+      {
+        "false_negatives_baseline": 0,
+        "false_negatives_penalized": 0,
+        "false_positives_baseline": 0,
+        "false_positives_penalized": 0,
+        "group": "central third",
+        "n": 33,
+        "n_high": 5,
+        "slice": "longitude third"
+      },
+      {
+        "false_negatives_baseline": 0,
+        "false_negatives_penalized": 0,
+        "false_positives_baseline": 2,
+        "false_positives_penalized": 1,
+        "group": "eastern third",
+        "n": 33,
+        "n_high": 12,
+        "slice": "longitude third"
+      }
+    ],
+    "statewide_cutoff": 8.12,
+    "summary": [
+      {
+        "metric": "roc_auc",
+        "prespecified_partition": 0.99688,
+        "quantity": "baseline",
+        "repeats_mean": 0.99279,
+        "repeats_p2_5": 0.98602,
+        "repeats_p97_5": 0.99844,
+        "sd_across_its_folds": 0.00428,
+        "share_repeats_baseline_better": NaN,
+        "share_repeats_penalized_better": NaN,
+        "share_repeats_tied": NaN
+      },
+      {
+        "metric": "roc_auc",
+        "prespecified_partition": 0.99688,
+        "quantity": "penalized",
+        "repeats_mean": 0.99439,
+        "repeats_p2_5": 0.9875,
+        "repeats_p97_5": 1.0,
+        "sd_across_its_folds": 0.00699,
+        "share_repeats_baseline_better": NaN,
+        "share_repeats_penalized_better": NaN,
+        "share_repeats_tied": NaN
+      },
+      {
+        "metric": "roc_auc",
+        "prespecified_partition": 0.0,
+        "quantity": "penalized minus baseline",
+        "repeats_mean": 0.00161,
+        "repeats_p2_5": -0.00313,
+        "repeats_p97_5": 0.00781,
+        "sd_across_its_folds": NaN,
+        "share_repeats_baseline_better": 0.24,
+        "share_repeats_penalized_better": 0.58,
+        "share_repeats_tied": 0.18
+      },
+      {
+        "metric": "average_precision",
+        "prespecified_partition": 0.98,
+        "quantity": "baseline",
+        "repeats_mean": 0.9742,
+        "repeats_p2_5": 0.9416,
+        "repeats_p97_5": 0.99524,
+        "sd_across_its_folds": 0.02739,
+        "share_repeats_baseline_better": NaN,
+        "share_repeats_penalized_better": NaN,
+        "share_repeats_tied": NaN
+      },
+      {
+        "metric": "average_precision",
+        "prespecified_partition": 0.99,
+        "quantity": "penalized",
+        "repeats_mean": 0.98302,
+        "repeats_p2_5": 0.9614,
+        "repeats_p97_5": 1.0,
+        "sd_across_its_folds": 0.02236,
+        "share_repeats_baseline_better": NaN,
+        "share_repeats_penalized_better": NaN,
+        "share_repeats_tied": NaN
+      },
+      {
+        "metric": "average_precision",
+        "prespecified_partition": 0.01,
+        "quantity": "penalized minus baseline",
+        "repeats_mean": 0.00882,
+        "repeats_p2_5": -0.01,
+        "repeats_p97_5": 0.03444,
+        "sd_across_its_folds": NaN,
+        "share_repeats_baseline_better": 0.18,
+        "share_repeats_penalized_better": 0.6,
+        "share_repeats_tied": 0.22
+      },
+      {
+        "metric": "sensitivity",
+        "prespecified_partition": 0.83333,
+        "quantity": "baseline",
+        "repeats_mean": 0.8435,
+        "repeats_p2_5": 0.81667,
+        "repeats_p97_5": 0.85,
+        "sd_across_its_folds": 0.1559,
+        "share_repeats_baseline_better": NaN,
+        "share_repeats_penalized_better": NaN,
+        "share_repeats_tied": NaN
+      },
+      {
+        "metric": "sensitivity",
+        "prespecified_partition": 0.83333,
+        "quantity": "penalized",
+        "repeats_mean": 0.85083,
+        "repeats_p2_5": 0.75375,
+        "repeats_p97_5": 0.95,
+        "sd_across_its_folds": 0.1559,
+        "share_repeats_baseline_better": NaN,
+        "share_repeats_penalized_better": NaN,
+        "share_repeats_tied": NaN
+      },
+      {
+        "metric": "sensitivity",
+        "prespecified_partition": 0.0,
+        "quantity": "penalized minus baseline",
+        "repeats_mean": 0.00733,
+        "repeats_p2_5": -0.09625,
+        "repeats_p97_5": 0.1,
+        "sd_across_its_folds": NaN,
+        "share_repeats_baseline_better": 0.26,
+        "share_repeats_penalized_better": 0.42,
+        "share_repeats_tied": 0.32
+      }
+    ],
+    "threshold": 0.5,
+    "tuning_most_common": [
+      {
+        "C": 10.0,
+        "l1_ratio": 1.0,
+        "share": 0.36,
+        "times_chosen": 90
+      },
+      {
+        "C": 3.0,
+        "l1_ratio": 1.0,
+        "share": 0.224,
+        "times_chosen": 56
+      },
+      {
+        "C": 1.0,
+        "l1_ratio": 1.0,
+        "share": 0.176,
+        "times_chosen": 44
+      }
+    ],
+    "undefined_folds_in_repeats": 0
+  }
+}

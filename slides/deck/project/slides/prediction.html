@@ -1,0 +1,28 @@
+<section id="prediction" data-transition="fade">
+<h2 class="title" style="width:1300px">Five indicators flag high-COPD counties no better than smoking alone</h2>
+<div class="row">
+<div class="col" style="width:960px; gap:16px">
+<img class="fig reveal" src="/_blob/fc0098487d99faf4df491da035a2adcb" alt="Held-out ROC AUC is 0.997 for both classifiers. Across 50 random partitions, the difference between the five-indicator model and the smoking-only model is spread around zero, from minus 0.011 to plus 0.009, average plus 0.002." style="width:960px; height:520px">
+<p class="note in" style="--i:1">High COPD = the top fifth of counties.</p>
+<p class="note in" style="--i:2">Leak check: with shuffled labels the same pipeline scores 0.49.</p>
+</div>
+<div class="col fragment" data-fragment-index="1" style="width:640px; gap:16px">
+<img class="fig" src="/_blob/0e0728cf277fb151422166350b5f265b" alt="Map of North Carolina: high-COPD counties that the models flag are dark blue; the four they both miss, Alleghany, Rutherford, Surry and Wilkes, all in the west, are orange." style="width:640px; height:420px">
+<p class="note">Both models miss the same four western counties. The high score reflects how closely the smoking and COPD estimates move together, not a ready screening tool.</p>
+</div>
+</div>
+<div class="foot"><p class="source">Logistic regression · nested 5-fold cross-validation · cutoff, scaling and tuning use training counties only</p><div class="pageno"></div></div>
+<aside>SPEAKER 5 · about 55 seconds
+
+Last, prediction. Can all five indicators flag the top fifth of counties for COPD better than smoking alone? We used cross-validation, so every county is scored by a model that never saw it.
+
+Both models reach an AUC of 0.997, so they almost always rank a high county above a lower one. Across 50 random splits, the difference is centered near zero. And when we shuffle the labels, the score falls to 0.49, a coin flip, so nothing is leaking.
+
+[CLICK]
+
+Both models miss the same four counties, all in the west. The score is this high because the smoking and COPD estimates move almost together. It is not a ready screening tool.
+
+[Speaker 6] will wrap up.
+
+Numbers: high COPD = at or above the 80th percentile of the training counties; both models are logistic regressions (smoking only, no penalty; all five with an L1 or elastic-net penalty tuned on average precision); nested 5-fold cross-validation; ROC AUC 0.997 for both; average precision 0.98 and 0.99; sensitivity 0.83 for both. Difference in AUC over 50 partitions: +0.002 (-0.003 to 0.008). Shuffled labels: 0.49. Missed by both: Alleghany, Rutherford, Surry, Wilkes.</aside>
+</section>

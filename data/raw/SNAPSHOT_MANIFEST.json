@@ -1,0 +1,53 @@
+{
+  "files": {
+    "cdc_places_nc_raw.csv": {
+      "bytes": 2154823,
+      "file_modified_utc": "2026-09-28T23:47:32Z",
+      "sha256": "b66a16596357222c5a25d9c7b22c0a6f61fa643e6105d432a5904a6f1f5c2b1d"
+    },
+    "census_nc_county_boundaries.geojson": {
+      "bytes": 161860,
+      "file_modified_utc": "2026-11-15T18:52:58Z",
+      "registered_utc": "2026-11-15T18:52:58Z",
+      "sha256": "f155ea262200502e6078d3c53d91e7f31e11d8cca4869476796cc5c599ca4f6e"
+    },
+    "epa_aqi_nc_raw.csv": {
+      "bytes": 2693,
+      "file_modified_utc": "2026-09-28T23:47:32Z",
+      "sha256": "cc803fd99159e5b97555c9df282372ab0755d7bba821fe8932cd7d18c3ff9e19"
+    }
+  },
+  "manifest_created_utc": "2026-11-15T17:33:01Z",
+  "note": "Checksums are registered once and verified on every run. The CDC dataset metadata was not saved on 2026-09-28; see data/fresh/ for metadata retrieved later and results/audit/snapshot_vs_fresh.csv for the comparison.",
+  "sources": {
+    "cdc": {
+      "dataset": "PLACES: Local Data for Better Health, County Data, 2025 release",
+      "dataset_id": "swc5-untb",
+      "file": "cdc_places_nc_raw.csv",
+      "processing": "JSON response converted to CSV with pandas; no rows or columns dropped",
+      "publisher": "Centers for Disease Control and Prevention, Division of Population Health",
+      "retrieved_local_date": "2026-09-28",
+      "source_url": "https://data.cdc.gov/resource/swc5-untb.json?stateabbr=NC&$limit=50000",
+      "terms": "Public Domain (dataset metadata, licenseId PUBLIC_DOMAIN)"
+    },
+    "census": {
+      "dataset": "Cartographic Boundary Files, 2023: counties, 1:5,000,000",
+      "file": "census_nc_county_boundaries.geojson",
+      "processing": "polygons with STATEFP == '37' converted to GeoJSON; coordinates rounded to 5 decimals",
+      "publisher": "U.S. Census Bureau",
+      "retrieved_local_date": "2026-11-15",
+      "source_url": "https://www2.census.gov/geo/tiger/GENZ2023/shp/cb_2023_us_county_5m.zip",
+      "terms": "U.S. Census Bureau public data product; the publisher states no restriction",
+      "use": "map outlines only; generalized shapes, not used for any measurement or model"
+    },
+    "epa": {
+      "dataset": "Annual AQI by County, 2023",
+      "file": "epa_aqi_nc_raw.csv",
+      "processing": "CSV inside the archive filtered to State == 'North Carolina'",
+      "publisher": "U.S. Environmental Protection Agency (AirData / Air Quality System)",
+      "retrieved_local_date": "2026-09-28",
+      "source_url": "https://aqs.epa.gov/aqsweb/airdata/annual_aqi_by_county_2023.zip",
+      "terms": "U.S. federal government public data"
+    }
+  }
+}

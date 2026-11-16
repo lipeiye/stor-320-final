@@ -1,0 +1,17 @@
+slice,group,model,n,mean_loo_error,mean_abs_loo_error,max_abs_loo_error
+population third,smallest third,baseline,34,-0.0415,0.15577,0.5606
+population third,middle third,baseline,33,0.04185,0.15167,0.54886
+population third,largest third,baseline,33,-0.00062,0.10976,0.3516
+population third,smallest third,expanded,34,-0.01758,0.13323,0.48026
+population third,middle third,expanded,33,0.03528,0.12667,0.45084
+population third,largest third,expanded,33,-0.02967,0.12125,0.63555
+longitude third,western third,baseline,34,0.07566,0.176,0.5606
+longitude third,central third,baseline,33,-0.02506,0.11486,0.3516
+longitude third,eastern third,baseline,33,-0.05443,0.12573,0.31995
+longitude third,western third,expanded,34,0.04485,0.14079,0.48026
+longitude third,central third,expanded,33,-0.06033,0.13463,0.63555
+longitude third,eastern third,expanded,33,0.00162,0.1055,0.30991
+AQI records,with AQI records,baseline,35,-0.0337,0.12913,0.5606
+AQI records,without AQI records,baseline,65,0.01737,0.14468,0.54886
+AQI records,with AQI records,expanded,35,-0.03187,0.11737,0.48026
+AQI records,without AQI records,expanded,65,0.01081,0.13235,0.63555

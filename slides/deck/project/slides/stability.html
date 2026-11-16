@@ -1,0 +1,35 @@
+<section id="stability" data-transition="fade">
+<h2 class="title" style="width:1000px">Three kinds of 95% interval disagree, and one county moves the slopes</h2>
+<div class="row">
+<div class="host reveal" style="width:1000px; height:600px">
+<img src="/_blob/f3f4e0f03365290e21f394311a57a910" alt="Slopes of no transport, plus 0.21, and housing insecurity, minus 0.21, in the model with all five predictors, each with its classical 95 percent interval. Both classical intervals stay clear of zero." style="width:1000px; height:600px">
+<img class="layer fragment" data-fragment-index="1" src="/_blob/6fac3892b0ca946317c2a770e65bed5e" alt="The robust interval for each slope is about three times as wide and reaches zero. The county bootstrap interval is wide as well but stays clear of zero." style="width:1000px; height:600px">
+<img class="layer fragment" data-fragment-index="2" src="/_blob/25325e1f0bb106d1aa69b29d15992c4e" alt="Without Robeson County the transport slope moves from plus 0.21 to plus 0.39 and the housing slope from minus 0.21 to minus 0.32." style="width:1000px; height:600px">
+</div>
+<div class="col" style="width:600px; gap:34px">
+<div class="fact fragment" data-fragment-index="2"><p class="mid">0.57</p><p class="cap">leverage of Robeson County, the highest by far (Cook’s distance 1.77)</p></div>
+<div class="fact fragment" data-fragment-index="3"><p class="mid">0.21</p><p class="cap">Moran’s I: neighboring counties err together, so every interval is likely too narrow</p></div>
+<div class="fact fragment" data-fragment-index="3"><p class="mid">3 of 3</p><p class="cap">social slopes span zero once estimates are redrawn inside their CDC intervals</p></div>
+</div>
+</div>
+<div class="foot"><p class="source">Model with all five predictors, 100 counties · robust (HC3): allows unequal noise across counties · bootstrap: 2,000 county resamples</p><div class="pageno"></div></div>
+<aside>SPEAKER 4 · about 60 seconds
+
+We also stress-tested the two slopes that were left. With the classical 95 percent interval, both stay away from zero, so they look real.
+
+[CLICK]
+
+But the robust interval, which does not assume every county is equally noisy, is about three times wider, and both reach zero. And the bootstrap, which resamples the counties 2,000 times, gives a third answer.
+
+[CLICK]
+
+One reason is a single county. Robeson has by far the most pull on the fit. Without it, the transportation slope almost doubles.
+
+[CLICK]
+
+Also, neighboring counties have similar errors, so these intervals are probably too narrow. And when we redraw every estimate inside its CDC interval, all three social slopes include zero.
+
+So we cannot trust any single slope. Next, [Speaker 5] has two more tests.
+
+Numbers: transport +0.214, classical 0.099 to 0.329, robust -0.148 to 0.576, bootstrap 0.111 to 0.642. Housing -0.211, classical -0.288 to -0.134, robust -0.429 to 0.007, bootstrap -0.434 to -0.142. Without Robeson: transport +0.39, housing -0.32. Robeson leverage 0.57, Cook's distance 1.77. Moran's I of residuals 0.21 (p &lt; 0.001). Bootstrap: 2,000 county resamples, seed 320.</aside>
+</section>

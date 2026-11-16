@@ -1,0 +1,29 @@
+<section id="data" data-transition="fade">
+<h2 class="title">Two public sources pass every audit check, but each county estimate carries a wide interval</h2>
+<div class="row">
+<div class="col" style="width:560px; gap:26px">
+<div class="src in" style="--i:0"><h3>CDC PLACES, 2025 release</h3><p class="note">Modeled estimates for all 100 counties, survey year 2023. One row per county.</p></div>
+<div class="src in" style="--i:1"><h3>EPA AirData, annual AQI 2023</h3><p class="note">Air quality records for 35 counties. Missing values are never filled in.</p></div>
+<p class="note in" style="--i:2"><b>42 of 42</b> audit checks pass. <b>0</b> cells differ from a fresh download.</p>
+<div class="stat fragment" data-fragment-index="1"><p class="big">85%</p><p class="cap">of county pairs have overlapping CDC intervals</p></div>
+</div>
+<div class="host reveal" style="width:1040px; height:620px">
+<img src="/_blob/436a6de43b3acf743f09226f0a1b1b04" alt="The 100 county COPD estimates ordered from lowest to highest, each drawn with its CDC 95 percent interval as a grey bar. A horizontal line marks the median county's estimate, 7.3 percent. Wake is lowest at 4.4 percent and Robeson highest at 10.3 percent." style="width:1040px; height:620px">
+<img class="layer fragment" data-fragment-index="1" src="/_blob/ba2c1362be16fb98dc19e205f4240f49" alt="Highlighted in blue: the 26 counties whose interval lies entirely above or below the median. A typical interval is plus or minus 1.19 points; the spread between counties is 1.15 points." style="width:1040px; height:620px">
+</div>
+</div>
+<div class="foot"><p class="source">CDC PLACES, 2025 release, with CDC’s published 95% limits · EPA AirData, 2023</p><div class="pageno"></div></div>
+<aside>SPEAKER 2 · about 55 seconds
+
+Our data come from two public sources. CDC PLACES gives the health and social measures, one row per county. EPA gives air quality, but only 35 counties have records, and we never fill in the missing ones. The data pass all 42 of our automatic checks.
+
+Now the key limitation. A PLACES number is not a count. It is an estimate from a CDC model, and it comes with an interval. Each grey bar is one county's interval.
+
+[CLICK]
+
+Only 26 counties are clearly above or below the median. For 85 percent of county pairs, the intervals overlap. So a small gap between two counties may not be real.
+
+Now [Speaker 3] has the main result.
+
+Sources: CDC PLACES county data, 2025 release, retrieved 2026-09-28 (https://data.cdc.gov/resource/swc5-untb.json); EPA AirData, Annual AQI by County 2023, retrieved 2026-09-28 (https://aqs.epa.gov/aqsweb/airdata/download_files.html). Re-downloaded 2026-11-15: 0 of 136,000 CDC cells and 0 of 525 EPA cells differ. Typical interval half-width 1.19 points; SD between counties 1.15; 4,950 county pairs.</aside>
+</section>

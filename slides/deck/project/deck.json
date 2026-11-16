@@ -1,0 +1,38 @@
+{
+  "v": 5,
+  "createdOnFiles": {"v": 1, "at": "2026-11-15T18:25:29Z"},
+  "lists": "css",
+  "format": {"v": 1, "shared": ["project/deck.css"]},
+  "title": "COPD and Social Needs in NC Counties",
+  "order": [
+    "cover",
+    "stakes",
+    "question",
+    "data",
+    "result",
+    "collinearity",
+    "why",
+    "stability",
+    "aqi",
+    "prediction",
+    "conclusion",
+    "questions",
+    "backup-asthma",
+    "backup-diagnostics",
+    "backup-coverage"
+  ],
+  "cover": "cover",
+  "sections": {
+    "opening": {"description": "A strong pattern on the map, and the question and comparison behind it.", "start": "cover"},
+    "data": {"description": "The two public sources and the one limitation that shapes the analysis.", "start": "data"},
+    "analysis": {"description": "The main result and the three reasons the social slopes cannot be trusted.", "start": "result"},
+    "extensions": {"description": "Air quality and prediction checks.", "start": "aqi"},
+    "close": {"description": "What the evidence supports, what it does not, and what would settle it.", "start": "conclusion"},
+    "backup": {"description": "Backup slides for questions.", "start": "backup-asthma"}
+  },
+  "faces": {
+    "inter": {"family": "Inter", "href": "https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"},
+    "inter-tight": {"family": "Inter Tight", "href": "https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700&display=swap"}
+  },
+  "designSystems": []
+}

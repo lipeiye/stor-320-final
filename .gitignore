@@ -1,0 +1,15 @@
+# Local environment, caches and editor files
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.claude/
+
+# Kept out of this public repository (see "This repository" in README.md):
+# the team's working notes and AI-agent guides, the proposal (it carries names)
+# and the instructor's course document.
+team_notes/
+AGENTS.md
+CLAUDE.md
+proposal.docx
+final_project_instructions_and_rubrics_updated.pdf

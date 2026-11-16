@@ -1,0 +1,6 @@
+profile,n_counties,median_days_with_aqi,min_days,max_days,median_of_median_aqi,mean_copd
+PM2.5 and NO2,1,365.0,365.0,365.0,37.0,8.0
+PM2.5 only,4,350.0,116.0,362.0,38.0,7.275
+ozone and PM10,3,305.0,302.0,350.0,38.0,7.967
+ozone and PM2.5 (some also PM10 or NO2),16,365.0,278.0,365.0,44.5,6.438
+ozone only,11,244.0,240.0,361.0,43.0,6.973

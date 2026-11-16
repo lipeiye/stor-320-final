@@ -1,0 +1,9 @@
+variable,n_with_aqi,n_without_aqi,with_aqi_mean,with_aqi_median,without_aqi_mean,without_aqi_median,difference_in_means,standardized_difference
+population,35,65,185655.8,69615.0,66731.354,45532.0,118924.446,0.693
+copd,35,65,6.877,7.1,7.271,7.4,-0.394,-0.345
+asthma,35,65,11.111,11.0,11.234,11.1,-0.122,-0.19
+smoking,35,65,15.48,15.7,16.283,16.5,-0.803,-0.305
+inactivity,35,65,24.637,24.5,25.698,25.7,-1.061,-0.275
+uninsured,35,65,11.349,11.5,11.946,11.8,-0.598,-0.295
+transport,35,65,9.457,9.0,10.134,9.4,-0.677,-0.264
+housing,35,65,13.971,13.0,14.9,14.0,-0.929,-0.239

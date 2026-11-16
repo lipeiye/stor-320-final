@@ -1,0 +1,32 @@
+<section id="why" data-transition="fade">
+<h2 class="title">A likely reason they move together: CDC models every measure from the same inputs</h2>
+<div class="row">
+<div class="flow" style="width:860px">
+<div class="pair">
+<div class="node in" style="--i:0"><h3>Survey answers</h3><p class="note">A different question for each measure</p></div>
+<div class="node node-shared in" style="--i:1"><h3>Shared inputs</h3><p class="note">Age, sex, race, education, county poverty</p></div>
+</div>
+<div class="pair in" style="--i:2"><p class="arrow">↓</p><p class="arrow">↓</p></div>
+<div class="node node-model in" style="--i:2"><h3>CDC statistical model</h3><p class="note">Multilevel regression and poststratification</p></div>
+<div class="pair in" style="--i:3"><p class="arrow">↓</p></div>
+<div class="chips in" style="--i:3"><p class="chip">COPD</p><p class="chip">Asthma</p><p class="chip chip-behavior">Smoking</p><p class="chip chip-behavior">Inactivity</p></div>
+<div class="chips in" style="--i:3"><p class="chip chip-need">Uninsured</p><p class="chip chip-need">No transport</p><p class="chip chip-need">Housing insecurity</p></div>
+<p class="note in" style="--i:4">Seven estimates per county, one recipe.<br>Correlations: 0.69 to 0.99.</p>
+</div>
+<img class="fig fragment" data-fragment-index="1" src="/_blob/18b6fb96365abc0cdcc21cbf76d8cfc5" alt="County COPD against smoking. The 100 points lie almost exactly on a line, correlation 0.99, while the grey CDC 95 percent intervals around every point are wide in both directions." style="width:740px; height:600px">
+</div>
+<div class="foot"><p class="source">CDC PLACES methodology and 2025 release · 100 counties</p><div class="pageno"></div></div>
+<aside>SPEAKER 4 · about 40 seconds
+
+The likely answer is in how the data are made. The CDC does not count COPD cases in every county. It starts from a national phone survey and builds a statistical model.
+
+For every measure, the model uses the same inputs: age, sex, race, education, and county poverty.
+
+So COPD, smoking, and our three social needs all come from one recipe.
+
+[CLICK]
+
+COPD against smoking is almost a perfect line, with a correlation of 0.99. But the grey lines show how uncertain each point really is.
+
+Source: CDC PLACES methodology (https://www.cdc.gov/places/methodology/index.html). The model is multilevel regression and poststratification on BRFSS answers, with age, sex, race/ethnicity and education from the survey, county poverty from the ACS, and state and county random effects. Correlations among the seven measures: 0.69 to 0.99.</aside>
+</section>

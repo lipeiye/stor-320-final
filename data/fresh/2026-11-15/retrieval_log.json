@@ -1,0 +1,81 @@
+{
+  "annual_aqi_by_county_2023.zip": {
+    "bytes": 21330,
+    "etag": "\"5352-656800297585d\"",
+    "http_status": 200,
+    "last_modified": "Mon, 13 Jul 2026 15:47:39 GMT",
+    "retrieved_utc": "2026-11-15T18:52:58Z",
+    "rows_all_states": 993,
+    "rows_nc": 35,
+    "sha256": "63507c051ebdb62907129eeaccc8a3e9fbcba60c336a7598cf164ae916b4c221",
+    "url": "https://aqs.epa.gov/aqsweb/airdata/annual_aqi_by_county_2023.zip"
+  },
+  "cb_2023_us_county_5m.zip": {
+    "bytes": 2987117,
+    "coordinate_system": "GCS_North_American_1983",
+    "counties_all_states": 3235,
+    "counties_nc": 100,
+    "etag": null,
+    "http_status": 200,
+    "last_modified": "Tue, 16 Apr 2024 12:24:27 GMT",
+    "retrieved_utc": "2026-11-15T18:52:58Z",
+    "sha256": "13b2bcdd81fee8476220793dd1023c4f1d2887945b5f66eef52afa98c99d2485",
+    "url": "https://www2.census.gov/geo/tiger/GENZ2023/shp/cb_2023_us_county_5m.zip"
+  },
+  "cdc_places_metadata.json": {
+    "attribution": "Centers for Disease Control and Prevention, National Center for Chronic Disease Prevention and Health Promotion, Division of Population Health",
+    "bytes": 38893,
+    "dataset_name": "PLACES: Local Data for Better Health, County Data, 2025 release",
+    "etag": null,
+    "http_status": 200,
+    "last_modified": null,
+    "license_id": "PUBLIC_DOMAIN",
+    "retrieved_utc": "2026-11-15T18:51:43Z",
+    "rows_updated_utc": "2025-12-04T10:35:06Z",
+    "sha256": "2c91ecdb7b06371824c527bcccc5079c121c664498a4544cfa91569722523ffd",
+    "url": "https://data.cdc.gov/api/views/swc5-untb.json",
+    "view_last_modified_utc": "2026-09-22T23:05:24Z"
+  },
+  "cdc_places_nc.json": {
+    "bytes": 4858561,
+    "columns": [
+      "year",
+      "stateabbr",
+      "statedesc",
+      "locationname",
+      "datasource",
+      "category",
+      "measure",
+      "data_value_unit",
+      "data_value_type",
+      "data_value",
+      "low_confidence_limit",
+      "high_confidence_limit",
+      "totalpopulation",
+      "totalpop18plus",
+      "locationid",
+      "categoryid",
+      "measureid",
+      "datavaluetypeid",
+      "short_question_text",
+      "geolocation"
+    ],
+    "etag": "W/\"aG90ZWwuNDQ0MzlfN18xOTR0dVRpNFRHY3FmTURTLThGVTRsLVQ4bmt4eGM---gzir9fh3fm7G2ezkLw5Clpov0AIR5Cg--gzip--gzip\"",
+    "footnote_fields_present": [],
+    "http_status": 200,
+    "last_modified": "Thu, 04 Dec 2025 10:35:59 GMT",
+    "retrieved_utc": "2026-11-15T18:51:42Z",
+    "rows": 8000,
+    "sha256": "2dc896ff5d125f801811f66ce6e44d04ca6702f6bfc655219996a37185a2d6e3",
+    "url": "https://data.cdc.gov/resource/swc5-untb.json?stateabbr=NC&$limit=50000"
+  },
+  "cdc_places_nc_raw.csv": {
+    "sha256": "b66a16596357222c5a25d9c7b22c0a6f61fa643e6105d432a5904a6f1f5c2b1d"
+  },
+  "census_nc_county_boundaries.geojson": {
+    "sha256": "f155ea262200502e6078d3c53d91e7f31e11d8cca4869476796cc5c599ca4f6e"
+  },
+  "epa_aqi_nc_raw.csv": {
+    "sha256": "cc803fd99159e5b97555c9df282372ab0755d7bba821fe8932cd7d18c3ff9e19"
+  }
+}

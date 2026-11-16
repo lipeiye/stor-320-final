@@ -1,0 +1,19 @@
+outcome,term,specification,estimate,ci_low,ci_high,hc3_low,hc3_high
+copd,transport,alone,0.37707,0.32884,0.4253,0.3356,0.41854
+copd,transport,with smoking and inactivity,-0.07566,-0.1307,-0.02062,-0.15093,-0.00038
+copd,transport,with all five predictors,0.21374,0.09879,0.32869,-0.14837,0.57584
+copd,uninsured,alone,0.46335,0.39857,0.52813,0.37825,0.54845
+copd,uninsured,with smoking and inactivity,0.03092,-0.00919,0.07104,-0.01156,0.07341
+copd,uninsured,with all five predictors,0.01692,-0.01856,0.05239,-0.02855,0.06239
+copd,housing,alone,0.2306,0.19372,0.26748,0.19605,0.26515
+copd,housing,with smoking and inactivity,-0.08386,-0.11838,-0.04934,-0.1228,-0.04492
+copd,housing,with all five predictors,-0.21059,-0.28769,-0.1335,-0.4286,0.00741
+asthma,transport,alone,0.2326,0.2137,0.2515,0.21144,0.25376
+asthma,transport,with smoking and inactivity,0.26329,0.18652,0.34006,0.19382,0.33277
+asthma,transport,with all five predictors,0.20891,0.07158,0.34624,-0.27376,0.69158
+asthma,uninsured,alone,0.21853,0.1725,0.26456,0.15188,0.28518
+asthma,uninsured,with smoking and inactivity,-0.22071,-0.26985,-0.17158,-0.27836,-0.16307
+asthma,uninsured,with all five predictors,-0.18574,-0.22812,-0.14336,-0.24616,-0.12532
+asthma,housing,alone,0.1495,0.13526,0.16375,0.13284,0.16616
+asthma,housing,with smoking and inactivity,0.16065,0.10676,0.21453,0.10843,0.21287
+asthma,housing,with all five predictors,-0.00786,-0.09997,0.08424,-0.30041,0.28469

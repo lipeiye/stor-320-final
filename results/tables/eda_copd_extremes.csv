@@ -1,0 +1,11 @@
+group,county,copd,copd_lcl,copd_ucl,smoking,population
+highest five,Robeson,10.3,9.0,11.6,23.1,117365
+highest five,Scotland,9.6,8.2,11.0,22.0,34376
+highest five,Richmond,9.1,7.8,10.5,20.0,42324
+highest five,Halifax,9.1,7.9,10.5,20.5,47298
+highest five,Washington,9.0,7.9,10.4,20.2,10713
+lowest five,Dare,5.1,4.2,6.1,11.4,38110
+lowest five,Durham,5.0,4.2,6.0,11.0,336892
+lowest five,Mecklenburg,5.0,4.2,5.9,10.7,1163701
+lowest five,Orange,4.8,3.9,5.9,10.3,150626
+lowest five,Wake,4.4,3.6,5.3,9.5,1190275

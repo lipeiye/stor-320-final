@@ -1,0 +1,10 @@
+# Python 3.12. Direct dependencies, pinned to the versions used for the submitted results.
+# Install:  uv venv --python 3.12 .venv && uv pip install --python .venv/bin/python -r requirements.txt
+numpy==2.5.4
+pandas==3.1.1
+scipy==1.18.1
+statsmodels==0.15.0
+scikit-learn==1.9.1
+matplotlib==3.11.2
+markdown==3.11.3
+pyshp==3.1.8        # reads the Census shapefile; only used by 00_download_data.py --refresh

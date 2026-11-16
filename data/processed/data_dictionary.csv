@@ -1,0 +1,47 @@
+variable,description,unit,denominator,source,year,non_missing
+fips,Five-digit county FIPS code (join key),code,,CDC PLACES LocationID,,100
+county,County name,text,,CDC PLACES LocationName,,100
+population,"Total resident population, Census 2023 estimate",persons,,CDC PLACES TotalPopulation,2023,100
+pop18plus,"Resident population aged 18 or older, Census 2023 estimate",persons,,CDC PLACES TotalPop18plus,2023,100
+lon,Longitude of county centroid,degrees,,CDC PLACES Geolocation,,100
+lat,Latitude of county centroid,degrees,,CDC PLACES Geolocation,,100
+copd,Chronic obstructive pulmonary disease among adults: age-adjusted prevalence (primary outcome),percent,adults aged 18 years or older,"CDC PLACES MeasureId COPD, model-based estimate from BRFSS",2023,100
+copd_lcl,Lower 95% confidence limit published by CDC for copd,percent,adults aged 18 years or older,"CDC PLACES MeasureId COPD, model-based estimate from BRFSS",2023,100
+copd_ucl,Upper 95% confidence limit published by CDC for copd,percent,adults aged 18 years or older,"CDC PLACES MeasureId COPD, model-based estimate from BRFSS",2023,100
+asthma,Current asthma among adults: age-adjusted prevalence (secondary outcome),percent,adults aged 18 years or older,"CDC PLACES MeasureId CASTHMA, model-based estimate from BRFSS",2023,100
+asthma_lcl,Lower 95% confidence limit published by CDC for asthma,percent,adults aged 18 years or older,"CDC PLACES MeasureId CASTHMA, model-based estimate from BRFSS",2023,100
+asthma_ucl,Upper 95% confidence limit published by CDC for asthma,percent,adults aged 18 years or older,"CDC PLACES MeasureId CASTHMA, model-based estimate from BRFSS",2023,100
+smoking,Current cigarette smoking among adults: age-adjusted prevalence (behavioral indicator),percent,adults aged 18 years or older,"CDC PLACES MeasureId CSMOKING, model-based estimate from BRFSS",2023,100
+smoking_lcl,Lower 95% confidence limit published by CDC for smoking,percent,adults aged 18 years or older,"CDC PLACES MeasureId CSMOKING, model-based estimate from BRFSS",2023,100
+smoking_ucl,Upper 95% confidence limit published by CDC for smoking,percent,adults aged 18 years or older,"CDC PLACES MeasureId CSMOKING, model-based estimate from BRFSS",2023,100
+inactivity,No leisure-time physical activity among adults: age-adjusted prevalence (behavioral indicator),percent,adults aged 18 years or older,"CDC PLACES MeasureId LPA, model-based estimate from BRFSS",2023,100
+inactivity_lcl,Lower 95% confidence limit published by CDC for inactivity,percent,adults aged 18 years or older,"CDC PLACES MeasureId LPA, model-based estimate from BRFSS",2023,100
+inactivity_ucl,Upper 95% confidence limit published by CDC for inactivity,percent,adults aged 18 years or older,"CDC PLACES MeasureId LPA, model-based estimate from BRFSS",2023,100
+uninsured,Current lack of health insurance among adults aged 18-64 years: age-adjusted prevalence (social indicator),percent,adults aged 18-64 years,"CDC PLACES MeasureId ACCESS2, model-based estimate from BRFSS",2023,100
+uninsured_lcl,Lower 95% confidence limit published by CDC for uninsured,percent,adults aged 18-64 years,"CDC PLACES MeasureId ACCESS2, model-based estimate from BRFSS",2023,100
+uninsured_ucl,Upper 95% confidence limit published by CDC for uninsured,percent,adults aged 18-64 years,"CDC PLACES MeasureId ACCESS2, model-based estimate from BRFSS",2023,100
+transport,Lack of reliable transportation in the past 12 months among adults: age-adjusted prevalence (social indicator),percent,adults aged 18 years or older,"CDC PLACES MeasureId LACKTRPT, model-based estimate from BRFSS",2023,100
+transport_lcl,Lower 95% confidence limit published by CDC for transport,percent,adults aged 18 years or older,"CDC PLACES MeasureId LACKTRPT, model-based estimate from BRFSS",2023,100
+transport_ucl,Upper 95% confidence limit published by CDC for transport,percent,adults aged 18 years or older,"CDC PLACES MeasureId LACKTRPT, model-based estimate from BRFSS",2023,100
+housing,Housing insecurity in the past 12 months among adults: age-adjusted prevalence (social indicator),percent,adults aged 18 years or older,"CDC PLACES MeasureId HOUSINSECU, model-based estimate from BRFSS",2023,100
+housing_lcl,Lower 95% confidence limit published by CDC for housing,percent,adults aged 18 years or older,"CDC PLACES MeasureId HOUSINSECU, model-based estimate from BRFSS",2023,100
+housing_ucl,Upper 95% confidence limit published by CDC for housing,percent,adults aged 18 years or older,"CDC PLACES MeasureId HOUSINSECU, model-based estimate from BRFSS",2023,100
+aqi_days,Days in the year with an AQI value from any monitoring site in the county,days,,EPA AirData annual AQI by county,2023,35
+aqi_good_days,Days with AQI 0-50,days,,EPA AirData annual AQI by county,2023,35
+aqi_moderate_days,Days with AQI 51-100,days,,EPA AirData annual AQI by county,2023,35
+aqi_usg_days,Days with AQI 101-150 (unhealthy for sensitive groups),days,,EPA AirData annual AQI by county,2023,35
+aqi_unhealthy_days,Days with AQI 151-200,days,,EPA AirData annual AQI by county,2023,35
+aqi_very_unhealthy_days,Days with AQI 201-300,days,,EPA AirData annual AQI by county,2023,35
+aqi_hazardous_days,Days with AQI 301 or higher,days,,EPA AirData annual AQI by county,2023,35
+aqi_max,Highest daily AQI value in the year,AQI index,,EPA AirData annual AQI by county,2023,35
+aqi_p90,90th percentile of daily AQI values,AQI index,,EPA AirData annual AQI by county,2023,35
+aqi_median,Median of daily AQI values,AQI index,,EPA AirData annual AQI by county,2023,35
+aqi_days_co,Days on which CO was the main pollutant,days,,EPA AirData annual AQI by county,2023,35
+aqi_days_no2,Days on which NO2 was the main pollutant,days,,EPA AirData annual AQI by county,2023,35
+aqi_days_ozone,Days on which ozone was the main pollutant,days,,EPA AirData annual AQI by county,2023,35
+aqi_days_pm25,Days on which PM2.5 was the main pollutant,days,,EPA AirData annual AQI by county,2023,35
+aqi_days_pm10,Days on which PM10 was the main pollutant,days,,EPA AirData annual AQI by county,2023,35
+aqi_days_gt100,Days with AQI above 100 (sum of the four categories above 100),days,,derived from EPA counts,2023,35
+aqi_prop_gt100,aqi_days_gt100 divided by aqi_days,proportion (0-1),days with an AQI value (aqi_days),derived from EPA counts,2023,35
+aqi_ge300_days,"1 if aqi_days >= 300, else 0 (coverage sensitivity flag)",0/1,,derived,2023,100
+has_aqi,"1 if the county has a 2023 EPA AQI summary, else 0",0/1,,derived from the join,2023,100

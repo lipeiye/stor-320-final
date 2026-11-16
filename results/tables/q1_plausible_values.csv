@@ -1,0 +1,6 @@
+term,estimate_published_values,sim_median,sim_low,sim_high,sim_share_positive
+smoking,0.34144,0.18463,0.11665,0.26258,1.0
+inactivity,0.11065,0.04698,-0.0136,0.10218,0.9335
+transport,0.21374,0.11327,-0.02746,0.25319,0.939
+uninsured,0.01692,0.06062,-0.03194,0.15351,0.91
+housing,-0.21059,-0.01357,-0.09981,0.06958,0.3705
